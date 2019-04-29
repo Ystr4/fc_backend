@@ -1,0 +1,11 @@
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.csproj.CoreCompileInputs.cache
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.AssemblyInfoInputs.cache
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.AssemblyInfo.cs
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.deps.json
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.runtimeconfig.json
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.runtimeconfig.dev.json
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.dll
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.csprojAssemblyReference.cache
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cache
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cs
+C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorTargetAssemblyInfo.cache
