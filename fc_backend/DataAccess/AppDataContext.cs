@@ -11,8 +11,9 @@ namespace fc_backend.DataAccess {
 
 //        public DbSet<HardwareReferenceEntity> HardwareReferences { get; set; }
 
-        public DbSet<ReferenceEntity> References { get; set; }
+        public DbSet<ReferenceEx> References { get; set; }
 
         public DbSet<DeviceDataByDay> DeviceData { get; set; }
+        public DbSet<DeviceInfoEntity> DeviceInfo { get; set; }
     }
 }

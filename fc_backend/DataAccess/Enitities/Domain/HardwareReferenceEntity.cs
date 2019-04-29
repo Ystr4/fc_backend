@@ -2,13 +2,13 @@
 
 namespace fc_backend.DataAccess.Models {
     public class HardwareReferenceEntity {
-        public HardwareReferenceEntity(HardwareVersionEntity version, List<ReferenceEntity> references)
+        public HardwareReferenceEntity(HardwareVersionEntity version, List<ReferenceEx> references)
         {
             Version = version;
             References = references;
         }
         public HardwareVersionEntity Version { get; set; }
 
-        private List<ReferenceEntity> References { get; set; }
+        private List<ReferenceEx> References { get; set; }
     }
 }

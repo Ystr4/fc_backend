@@ -8,7 +8,7 @@ namespace fc_backend.Infrastructure {
     {
         MappingProfile()
         {
-//            CreateMap<JObject, List<ReferenceEntity>>()
+//            CreateMap<JObject, List<ReferenceEx>>()
 //                    .ForMember()
         }
     }

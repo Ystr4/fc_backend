@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\fc_backend\\fc_backend.csproj": {}
+    "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\fc_backend\\fc_backend.csproj": {
+    "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\fc_backend\\fc_backend.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj",
         "projectName": "fc_backend",
-        "projectPath": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\fc_backend\\fc_backend.csproj",
-        "packagesPath": "C:\\Users\\YCA-t450s\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\fc_backend\\obj\\",
+        "projectPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj",
+        "packagesPath": "C:\\Users\\yves stroucken\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\YCA-t450s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yves stroucken\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
