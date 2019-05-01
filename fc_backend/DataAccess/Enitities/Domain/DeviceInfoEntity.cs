@@ -5,7 +5,7 @@ namespace fc_backend.DataAccess.Models {
     public class DeviceInfoEntity {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Uri OriginServer { get; set; }
+//        public Uri OriginServer { get; set; }
         public HardwareVersionEntity CurrentVersion { get; set; }
 
 
@@ -16,5 +16,5 @@ namespace fc_backend.DataAccess.Models {
     //            get { return (this.VersionHistory?.Count > 0); }
     //        }
     //        public List<VersionHistoryEntity> VersionHistory { get; set; }
-}
+    }
 }

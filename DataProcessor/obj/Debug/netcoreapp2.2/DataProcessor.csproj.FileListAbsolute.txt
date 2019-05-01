@@ -1,0 +1,8 @@
+C:\dev\workspace\fc_backend\DataProcessor\bin\Debug\netcoreapp2.2\DataProcessor.deps.json
+C:\dev\workspace\fc_backend\DataProcessor\bin\Debug\netcoreapp2.2\DataProcessor.runtimeconfig.json
+C:\dev\workspace\fc_backend\DataProcessor\bin\Debug\netcoreapp2.2\DataProcessor.runtimeconfig.dev.json
+C:\dev\workspace\fc_backend\DataProcessor\bin\Debug\netcoreapp2.2\DataProcessor.dll
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netcoreapp2.2\DataProcessor.csprojAssemblyReference.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netcoreapp2.2\DataProcessor.csproj.CoreCompileInputs.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netcoreapp2.2\DataProcessor.AssemblyInfoInputs.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netcoreapp2.2\DataProcessor.AssemblyInfo.cs
