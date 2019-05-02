@@ -14,18 +14,18 @@ namespace fc_backend.DataConverter {
 
         private void FillReferences(int hardware, int version)
         {
-            foreach (var reference in refs)
-            {
-                if (!references[hardware].ContainsKey(reference.Name))
-                {
-                    references[hardware].Add(reference.Name, new Dictionary<int, ReferenceEx>());
-                }
+//            foreach (var reference in refs)
+//            {
+//                if (!references[hardware].ContainsKey(reference.Name))
+//                {
+//                    references[hardware].Add(reference.Name, new Dictionary<int, ReferenceEx>());
+//                }
 
-                if (!references[hardware][reference.Name].ContainsKey(version))
-                {
-                    references[hardware][reference.Name][version] = reference;
-                }
-            }
+//                if (!references[hardware][reference.Name].ContainsKey(version))
+//                {
+//                    references[hardware][reference.Name][version] = reference;
+//                }
+//            }
         }
         
         // recursively call some format function on the byte array, passing in the index of the array that has the data based on the reference offset

@@ -9,3 +9,16 @@ C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\D
 C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cache
 C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cs
 C:\Users\YCA-t450s\Documents\Documents\Fontys\S6\prj\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorTargetAssemblyInfo.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.csproj.CoreCompileInputs.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorAssemblyInfo.cs
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.AssemblyInfoInputs.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.AssemblyInfo.cs
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.deps.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.runtimeconfig.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.runtimeconfig.dev.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.dll
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.pdb
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorTargetAssemblyInfo.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.dll
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.pdb

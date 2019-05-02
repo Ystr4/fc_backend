@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\DataProcessor\\DataProcessor.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\DataProcessor\\DataProcessor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\DataProcessor\\DataProcessor.csproj",
+        "projectName": "DataProcessor",
+        "projectPath": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\DataProcessor\\DataProcessor.csproj",
+        "packagesPath": "C:\\Users\\YCA-t450s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\YCA-t450s\\Documents\\Documents\\Fontys\\S6\\prj\\fc_backend\\DataProcessor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\YCA-t450s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[5.1.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

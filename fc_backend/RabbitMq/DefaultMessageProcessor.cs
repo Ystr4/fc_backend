@@ -12,10 +12,9 @@ namespace fc_backend.DataConverter {
             _deviceDataService = deviceDataService;
         }
 
-
-        public async Task ProcessMessage(object msg)
+        public Task ProcessMessage(object msg)
         {
-            
+            return null;
         }
     }
 }
