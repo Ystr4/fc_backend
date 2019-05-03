@@ -22,3 +22,4 @@ C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\fc_backend.pdb
 C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.RazorTargetAssemblyInfo.cache
 C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.dll
 C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.pdb
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\fc_backend.csprojAssemblyReference.cache

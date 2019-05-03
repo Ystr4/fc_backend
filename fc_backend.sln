@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.28803.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fc_backend", "fc_backend\fc_backend.csproj", "{243D2155-5323-4A09-BFB4-FA9B31037CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessor", "DataProcessor\DataProcessor.csproj", "{28C3D9D7-FA8F-4553-843C-30B9368ED63E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataProcessor", "DataProcessor\DataProcessor.csproj", "{28C3D9D7-FA8F-4553-843C-30B9368ED63E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitConsumer", "RabbitConsumer\RabbitConsumer.csproj", "{26D39FF1-1745-4C9B-8183-66E13BFC1BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{28C3D9D7-FA8F-4553-843C-30B9368ED63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28C3D9D7-FA8F-4553-843C-30B9368ED63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28C3D9D7-FA8F-4553-843C-30B9368ED63E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D39FF1-1745-4C9B-8183-66E13BFC1BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D39FF1-1745-4C9B-8183-66E13BFC1BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D39FF1-1745-4C9B-8183-66E13BFC1BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D39FF1-1745-4C9B-8183-66E13BFC1BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

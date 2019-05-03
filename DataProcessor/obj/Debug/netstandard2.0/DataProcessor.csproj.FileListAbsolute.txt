@@ -1,0 +1,4 @@
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netstandard2.0\DataProcessor.csprojAssemblyReference.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netstandard2.0\DataProcessor.csproj.CoreCompileInputs.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netstandard2.0\DataProcessor.AssemblyInfoInputs.cache
+C:\dev\workspace\fc_backend\DataProcessor\obj\Debug\netstandard2.0\DataProcessor.AssemblyInfo.cs
