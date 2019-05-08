@@ -1,8 +1,13 @@
 # Editor directories and files
 .idea
 .vscode
+.vs
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw*
+
+obj
+bin 
+packages

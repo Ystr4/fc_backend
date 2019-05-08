@@ -40,7 +40,6 @@ namespace Stienen.Backend {
             services.AddTransient<IDeviceDataService, DefaultDeviceDataService>();
             services.AddTransient<IDeviceDataRepository, DeviceDataRepository>();
 
-
             services.AddDbContext<AppDataContext>(
                                                   options => {
                                                       // Use in-memory database for quick dev and testing
@@ -54,61 +53,20 @@ namespace Stienen.Backend {
             //            services.AddEntityFrameworkNpgsql()
             //                           .AddDbContext<AppDataContext>()
             //                           .BuildServiceProvider();
-            
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options =>
-                    {
-                        var symmetricKey = Convert.FromBase64String(Configuration.GetSection("RabbitMq")["TokenKey"]);
-                        SecurityKey signingKey = new SymmetricSecurityKey(symmetricKey);
-//                        SecurityAlgorithms.HmacSha256Signature
-                        options.TokenValidationParameters = new TokenValidationParameters
-                        {
-                                // Clock skew compensates for server time drift.
-                                // We recommend 5 minutes or less:
-                                ClockSkew = TimeSpan.FromMinutes(5),
-                                // Specify the key used to sign the token:
-                                IssuerSigningKey = signingKey,
-                                RequireSignedTokens = true,
-                                // Ensure the token hasn't expired:
-                                RequireExpirationTime = false,
-                                ValidateLifetime = true,
-                                // Ensure the token audience matches our audience value (default true):
-                                ValidateAudience = true,
-                                ValidAudience = "SBE_audience",
-                                // Ensure the token was issued by a trusted authorization server (default true):
-                                ValidateIssuer = true,
-                                ValidIssuer = "SBE_issuer",
-                        };
-                    });
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAny",
-                                  builder =>
-                                  {
-                                      builder.AllowAnyOrigin()
-                                             .AllowAnyHeader()
-                                             .AllowAnyMethod();
-                                  });
-                options.AddPolicy("AllowAppSpecific",
-                                  builder =>
-                                  {
-                                      builder.WithOrigins("https://farmconnect.eu")
-                                             .AllowAnyHeader()
-                                             .AllowAnyMethod();
-                                  });
-            });
+            // Add bearer tokens auth
+            AddAuthenticationServices(services, Configuration);
+
+            // Add Cors support
+            AddCorsServices(services);
+
             // Add ASP.NET Core Identity
             AddIdentityCoreServices(services);
 
-            services.AddLogging(logging => {
-                logging.AddConfiguration(Configuration.GetSection("Logging"));
-                logging.AddConsole();
-                logging.AddDebug();
-            });
+            AddLoggingServices(services, Configuration);
 
-            services
-                    .AddMvc(options => {
+
+            services.AddMvc(options => {
 //                        options.CacheProfiles.Add("Static", new CacheProfile {Duration = 86400});
 //                        options.CacheProfiles.Add("Collection", new CacheProfile {Duration = 60});
 //                        options.CacheProfiles.Add("Resource", new CacheProfile {Duration = 180});
@@ -124,9 +82,10 @@ namespace Stienen.Backend {
                         options.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
                         options.SerializerSettings.DateParseHandling = DateParseHandling.DateTimeOffset;
                     });
-            services
-                    .AddRouting(options => options.LowercaseUrls = true);
+
+            services.AddRouting(options => options.LowercaseUrls = true);
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -134,12 +93,13 @@ namespace Stienen.Backend {
             if (env.IsDevelopment()) {
                 app.UseDeveloperExceptionPage();
                 app.UseCors("AllowAny");
-            }   
+            }
             else {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
                 app.UseCors("AllowAppSpecific");
             }
+
             app.UseAuthentication();
             app.UseHttpsRedirection();
 
@@ -158,6 +118,60 @@ namespace Stienen.Backend {
                    .AddEntityFrameworkStores<AppDataContext>()
                    .AddDefaultTokenProviders()
                    .AddSignInManager<SignInManager<UserEntity>>();
+        }
+
+        private static void AddAuthenticationServices(IServiceCollection services, IConfiguration config)
+        {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options => {
+                        var symmetricKey = Convert.FromBase64String(config.GetSection("RabbitMq")["TokenKey"]);
+                        SecurityKey signingKey = new SymmetricSecurityKey(symmetricKey);
+                        //                        SecurityAlgorithms.HmacSha256Signature
+                        options.TokenValidationParameters = new TokenValidationParameters {
+                                // Clock skew compensates for server time drift.
+                                // We recommend 5 minutes or less:
+                                ClockSkew = TimeSpan.FromMinutes(5),
+                                // Specify the key used to sign the token:
+                                IssuerSigningKey = signingKey,
+                                RequireSignedTokens = true,
+                                // Ensure the token hasn't expired:
+                                RequireExpirationTime = false,
+                                ValidateLifetime = true,
+                                // Ensure the token audience matches our audience value (default true):
+                                ValidateAudience = true,
+                                ValidAudience = "SBE_audience",
+                                // Ensure the token was issued by a trusted authorization server (default true):
+                                ValidateIssuer = true,
+                                ValidIssuer = "SBE_issuer",
+                        };
+                    });
+        }
+
+        private void AddLoggingServices(IServiceCollection services, IConfiguration config)
+        {
+            services.AddLogging(logging => {
+                logging.AddConfiguration(config.GetSection("Logging"));
+                logging.AddConsole();
+                logging.AddDebug();
+            });
+        }
+
+        private void AddCorsServices(IServiceCollection services)
+        {
+            services.AddCors(options => {
+                options.AddPolicy("AllowAny",
+                                  builder => {
+                                      builder.AllowAnyOrigin()
+                                             .AllowAnyHeader()
+                                             .AllowAnyMethod();
+                                  });
+                options.AddPolicy("AllowAppSpecific",
+                                  builder => {
+                                      builder.WithOrigins("https://farmconnect.eu")
+                                             .AllowAnyHeader()
+                                             .AllowAnyMethod();
+                                  });
+            });
         }
     }
 }
