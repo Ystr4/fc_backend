@@ -1,4 +1,4 @@
-﻿namespace fc_backend.DataAccess.Models.Frontend {
+﻿namespace Stienen.Backend.DataAccess.Models.Frontend {
     public class FilterSettingsEntity {
         
     }

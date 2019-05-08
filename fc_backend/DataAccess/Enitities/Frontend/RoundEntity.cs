@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace fc_backend.DataAccess.Models.Frontend {
+namespace Stienen.Backend.DataAccess.Models.Frontend {
     public class RoundEntity {
         public string Name { get; set; }
         public Guid UserId { get; set; }

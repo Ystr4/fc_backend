@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using fc_backend.DataAccess.Models;
+using Stienen.Backend.DataAccess.Models;
 using Newtonsoft.Json.Linq;
 
-namespace fc_backend.Infrastructure {
+namespace Stienen.Backend.Infrastructure {
     public class MappingProfile : Profile
     {
         MappingProfile()
         {
-//            CreateMap<JObject, List<ReferenceEx>>()
+//            CreateMap<>()
 //                    .ForMember()
         }
     }

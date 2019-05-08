@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using DataProcessor.database;
 using Stienen.RabbitMq;
@@ -10,13 +11,11 @@ namespace DataProcessor.RabbitMq {
             ChangedDataDTO dto = msg as ChangedDataDTO;
             if (dto != null) {
                 try {
-                    Console.WriteLine("before inserted");
                     InsertProcs._InsertDeviceData(dto.did, dto.hardware, dto.version, dto.stamp, dto.drift, dto.storeType, dto.data);
-                    Console.WriteLine("inserted");
                     return Task.CompletedTask;
                 }
                 catch (Exception ex) {
-                    Console.WriteLine(ex);
+                    Trace.TraceError("ChangedDataHandler caught exception: {0}", ex);
                     throw;
                 }
             }

@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using fc_backend.DataAccess.Models;
 
-namespace fc_backend.Services {
+namespace Stienen.Backend.Services {
     public interface IReferenceService {
         Task<ReferenceEx> GetHardwareReferenceByIndexAsync(int hardware, int version, int index);
         Task<ReferenceEx> GetHardwareReferenceByNameAsync(int hardware, int version, string name);

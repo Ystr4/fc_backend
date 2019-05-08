@@ -1,0 +1,17 @@
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.csproj.CoreCompileInputs.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.RazorAssemblyInfo.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.RazorAssemblyInfo.cs
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.AssemblyInfoInputs.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.AssemblyInfo.cs
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\StienenAPI.deps.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\StienenAPI.runtimeconfig.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\StienenAPI.runtimeconfig.dev.json
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\StienenAPI.dll
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\StienenAPI.pdb
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.RazorTargetAssemblyInfo.cache
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.dll
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.pdb
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.csprojAssemblyReference.cache
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\Data.Postgres.dll
+C:\dev\workspace\fc_backend\fc_backend\bin\Debug\netcoreapp2.2\Data.Postgres.pdb
+C:\dev\workspace\fc_backend\fc_backend\obj\Debug\netcoreapp2.2\StienenAPI.csproj.CopyComplete

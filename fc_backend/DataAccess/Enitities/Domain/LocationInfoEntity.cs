@@ -1,6 +1,6 @@
 using System;
 
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class LocationInfoEntity {
         public Guid Id { get; set; }
         public string Name { get; set; }

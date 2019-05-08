@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Data.Postgres.Entities;
 
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class DeviceDataByDay {
 //        [ForeignKey()]
         public Guid DeviceId { get; set; }

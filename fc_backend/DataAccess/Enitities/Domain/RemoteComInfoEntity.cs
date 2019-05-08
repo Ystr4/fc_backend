@@ -1,4 +1,4 @@
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class RemoteComInfoEntity {
         public int ComAddress { get; set; }
         public int SortOrder { get; set; }

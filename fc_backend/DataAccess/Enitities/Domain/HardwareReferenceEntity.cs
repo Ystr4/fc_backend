@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class HardwareReferenceEntity {
         public HardwareReferenceEntity(HardwareVersionEntity version, List<ReferenceEx> references)
         {

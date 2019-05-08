@@ -1,4 +1,4 @@
-﻿namespace fc_backend.DataAccess.Models {
+﻿namespace Stienen.Backend.DataAccess.Models {
     public class ReferenceEx {
 
         //        public HardwareVersionEntity Version { get; set; }

@@ -1,4 +1,4 @@
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class HardwareVersionEntity {
         public HardwareVersionEntity(int hardware, int version)
         {

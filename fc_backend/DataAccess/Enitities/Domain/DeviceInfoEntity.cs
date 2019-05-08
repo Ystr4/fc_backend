@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class DeviceInfoEntity {
         public Guid Id { get; set; }
         public string Name { get; set; }

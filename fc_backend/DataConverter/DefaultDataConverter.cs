@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using fc_backend.DataAccess.Models;
+using Stienen.Backend.DataAccess.Models;
 
-namespace fc_backend.DataConverter {
+namespace Stienen.API.DataConverter {
     public class DefaultDataConverter : IDataConverter {
         private Dictionary<int, Dictionary<String, Dictionary<int, ReferenceEx>>> references;
 

@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj",
-        "projectName": "fc_backend",
+        "projectName": "StienenAPI",
         "projectPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\fc_backend.csproj",
         "packagesPath": "C:\\Users\\yves stroucken\\.nuget\\packages\\",
         "outputPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\obj\\",

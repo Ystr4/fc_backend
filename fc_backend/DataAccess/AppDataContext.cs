@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using fc_backend.DataAccess.Models;
+using Stienen.Backend.DataAccess.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace fc_backend.DataAccess {
+namespace Stienen.Backend.DataAccess {
     public class AppDataContext : DbContext { //IdentityDbContext<UserEntity, UserRoleEntity, Guid> {
         public AppDataContext(DbContextOptions options) 
                 : base(options) { }
@@ -13,18 +13,6 @@ namespace fc_backend.DataAccess {
 
 
 
-//        public DbSet<HardwareReferenceEntity> HardwareReferences { get; set; }
 
-//        public DbSet<ReferenceEx> References { get; set; }
-
-//        public DbSet<DeviceDataByDay> DeviceData { get; set; }
-        //        public DbSet<DeviceInfoEntity> DeviceInfo { get; set; }
-
-
-//        protected override void OnModelCreating(ModelBuilder modelBuilder)
-//        {
-//            modelBuilder.Entity<DeviceDataByDay>()
-//                        .HasKey(pk => new {pk.DeviceId, pk.Day, pk.VarName});
-//        }
     }
 }

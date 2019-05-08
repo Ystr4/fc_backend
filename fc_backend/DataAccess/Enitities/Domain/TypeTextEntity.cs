@@ -1,4 +1,4 @@
-namespace fc_backend.DataAccess.Models {
+namespace Stienen.Backend.DataAccess.Models {
     public class TypeTextEntity {
         public HardwareVersionEntity Version { get; set; }
         public int Index { get; set; }
