@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace fc_backend.DataConverter {
+namespace Stienen.API.DataConverter {
     public class DefaultBacklogWorker : IBacklogWorker {
         public Task RequestDeviceBacklog(Uri uri, Guid did, StoreType storeType, DateTime begin, DateTime end, int pageLimit = 100)
         {

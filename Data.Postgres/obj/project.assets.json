@@ -1139,11 +1139,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
+      "projectUniqueName": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
       "projectName": "Data.Postgres",
-      "projectPath": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
+      "projectPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
       "packagesPath": "C:\\Users\\yves stroucken\\.nuget\\packages\\",
-      "outputPath": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\obj\\",
+      "outputPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

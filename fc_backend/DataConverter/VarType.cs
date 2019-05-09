@@ -1,4 +1,4 @@
-﻿namespace fc_backend.DataConverter {
+﻿namespace Stienen.API.DataConverter {
     public enum VarType {
         vtVoid = 0,
         vtBool,

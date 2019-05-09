@@ -1,5 +1,3 @@
-﻿namespace fc_backend.DataConverter {
-    public interface IDataConverter {
-        
-    }
+﻿namespace Stienen.API.DataConverter {
+    public interface IDataConverter { }
 }

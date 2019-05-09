@@ -1,6 +1,5 @@
-﻿namespace fc_backend.DataConverter {
-    public enum StoreType
-    {
+﻿namespace Stienen.API.DataConverter {
+    public enum StoreType {
         Unknown = 0,
         BackupData,
         StoredData,

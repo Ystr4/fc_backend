@@ -71,7 +71,7 @@ namespace Stienen.Backend {
                                 RequireSignedTokens = true,
                                 // Ensure the token hasn't expired:
                                 RequireExpirationTime = false,
-                                ValidateLifetime = true,
+                                ValidateLifetime = false,
                                 // Ensure the token audience matches our audience value (default true):
                                 ValidateAudience = true,
                                 ValidAudience = "SBE_audience",

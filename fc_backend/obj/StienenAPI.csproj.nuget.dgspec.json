@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\workspace\\fc_backend\\fc_backend\\StienenAPI.csproj": {}
+    "C:\\dev\\workspace\\Semester6\\fc_backend\\fc_backend\\StienenAPI.csproj": {}
   },
   "projects": {
-    "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj": {
+    "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
         "projectName": "Data.Postgres",
-        "projectPath": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
+        "projectPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj",
         "packagesPath": "C:\\Users\\yves stroucken\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\obj\\",
+        "outputPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\dev\\workspace\\fc_backend\\fc_backend\\StienenAPI.csproj": {
+    "C:\\dev\\workspace\\Semester6\\fc_backend\\fc_backend\\StienenAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\workspace\\fc_backend\\fc_backend\\StienenAPI.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\Semester6\\fc_backend\\fc_backend\\StienenAPI.csproj",
         "projectName": "StienenAPI",
-        "projectPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\StienenAPI.csproj",
+        "projectPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\fc_backend\\StienenAPI.csproj",
         "packagesPath": "C:\\Users\\yves stroucken\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\workspace\\fc_backend\\fc_backend\\obj\\",
+        "outputPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\fc_backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -90,8 +90,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj": {
-                "projectPath": "C:\\dev\\workspace\\fc_backend\\Data.Postgres\\Data.Postgres.csproj"
+              "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj": {
+                "projectPath": "C:\\dev\\workspace\\Semester6\\fc_backend\\Data.Postgres\\Data.Postgres.csproj"
               }
             }
           }

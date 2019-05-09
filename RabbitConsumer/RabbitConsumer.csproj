@@ -89,15 +89,5 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\prj\FarmConnect\Shared\trunk\Common\Common\Common.csproj">
-      <Project>{246ecd9a-65a4-4c64-b9f4-8234773101e4}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Semester6\shared\RabbitMq\RabbitMq.csproj">
-      <Project>{9a5bd9fd-7bba-4205-8f93-e5a8eff33da0}</Project>
-      <Name>RabbitMq</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

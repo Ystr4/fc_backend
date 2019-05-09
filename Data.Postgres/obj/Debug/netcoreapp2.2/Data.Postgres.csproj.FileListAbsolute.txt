@@ -12,3 +12,17 @@ C:\dev\workspace\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Exte
 C:\dev\workspace\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.csproj.CopyComplete
 C:\dev\workspace\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Logging.Abstractions.dll
 C:\dev\workspace\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Logging.Abstractions.xml
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.csprojAssemblyReference.cache
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.csproj.CoreCompileInputs.cache
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.AssemblyInfoInputs.cache
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.AssemblyInfo.cs
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.dll
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.pdb
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Data.Postgres.deps.json
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Data.Postgres.dll
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Data.Postgres.pdb
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Logging.Abstractions.dll
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Options.dll
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Logging.Abstractions.xml
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Options.xml
+C:\dev\workspace\Semester6\fc_backend\Data.Postgres\obj\Debug\netcoreapp2.2\Data.Postgres.csproj.CopyComplete

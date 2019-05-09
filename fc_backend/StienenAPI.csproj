@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
@@ -8,17 +8,6 @@
     <RootNamespace>Stienen.Backend</RootNamespace>
     <AssemblyName>StienenAPI</AssemblyName>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Compile Remove="Common\**" />
-    <Compile Remove="DataConverter\**" />
-    <Content Remove="Common\**" />
-    <Content Remove="DataConverter\**" />
-    <EmbeddedResource Remove="Common\**" />
-    <EmbeddedResource Remove="DataConverter\**" />
-    <None Remove="Common\**" />
-    <None Remove="DataConverter\**" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Services\DefaultReferenceService.cs" />
