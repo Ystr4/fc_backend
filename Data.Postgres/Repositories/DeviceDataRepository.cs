@@ -12,7 +12,8 @@ using NpgsqlTypes;
 namespace Data.Postgres.Repositories {
     public class DeviceDataRepository : BaseRepository, IDeviceDataRepository {
         private readonly ILogger<DeviceDataRepository> _logger;
-        public DeviceDataRepository(IOptions<DatabaseSettings> dbOptions, ILogger<DeviceDataRepository> logger)
+        public DeviceDataRepository(IOptions<DatabaseSettings> dbOptions, ILogger<DeviceDataRepository
+            > logger)
                 : base(dbOptions.Value.ConnectionString) { }
 
         public Task<HistoricDataSet> GetHistoricDeviceData(Guid did, string name, DateTime begin, DateTime end)
