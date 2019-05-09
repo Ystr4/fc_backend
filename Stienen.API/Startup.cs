@@ -34,25 +34,19 @@ namespace Stienen.Backend {
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.Configure<DatabaseSettings>(Configuration.GetSection("DeviceDataDB"));
+            // Add DI support for IOptions
             services.AddOptions();
 
+            // Add DI mappings
             services.AddTransient<IDeviceDataService, DefaultDeviceDataService>();
             services.AddTransient<IDeviceDataRepository, DeviceDataRepository>();
 
-            services.AddDbContext<AppDataContext>(
-                                                  options => {
-                                                      // Use in-memory database for quick dev and testing
-                                                      // TODO: Swap out for a real database in production
-                                                      options.UseInMemoryDatabase("stienenDB");
-//                                                         options.UseNpgsql(Configuration.GetSection("").Value);
-//                                                         options.UseOpenIddict<Guid>();
-                                                  });
+            // Add EF core database
+            AddDbContextServices(services);
 
+            // Add configuration used by Data.Posgres
+            services.Configure<DatabaseSettings>(Configuration.GetSection("DeviceDataDB"));
 
-            //            services.AddEntityFrameworkNpgsql()
-            //                           .AddDbContext<AppDataContext>()
-            //                           .BuildServiceProvider();
             // Add bearer tokens auth
             AddAuthenticationServices(services, Configuration);
 
@@ -62,29 +56,13 @@ namespace Stienen.Backend {
             // Add ASP.NET Core Identity
             AddIdentityCoreServices(services);
 
+            // Add logging
             AddLoggingServices(services, Configuration);
 
-
-            services.AddMvc(options => {
-//                        options.CacheProfiles.Add("Static", new CacheProfile {Duration = 86400});
-//                        options.CacheProfiles.Add("Collection", new CacheProfile {Duration = 60});
-//                        options.CacheProfiles.Add("Resource", new CacheProfile {Duration = 180});
-
-                        options.Filters.Add<JsonExceptionFilter>();
-                        options.Filters.Add<RequireHttpsOrCloseAttribute>();
-//                        options.Filters.Add<LinkRewritingFilter>();
-                    })
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                    .AddJsonOptions(options => {
-                        // These should be the defaults, but we can be explicit:
-                        options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
-                        options.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
-                        options.SerializerSettings.DateParseHandling = DateParseHandling.DateTimeOffset;
-                    });
-
+            // Add Mvc
+            AddMvcServices(services);
             services.AddRouting(options => options.LowercaseUrls = true);
         }
-
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -103,6 +81,23 @@ namespace Stienen.Backend {
             app.UseHttpsRedirection();
 
             app.UseMvc();
+        }
+
+        private void AddDbContextServices(IServiceCollection services)
+        {
+            services.AddDbContext<AppDataContext>(
+                                                  options => {
+                                                      // Use in-memory database for quick dev and testing
+                                                      // TODO: Swap out for a real database in production
+                                                      options.UseInMemoryDatabase("stienenDB");
+                                                      //                                                         options.UseNpgsql(Configuration.GetSection("").Value);
+                                                      //                                                         options.UseOpenIddict<Guid>();
+                                                  });
+
+
+            //            services.AddEntityFrameworkNpgsql()
+            //                           .AddDbContext<AppDataContext>()
+            //                           .BuildServiceProvider();
         }
 
         private static void AddIdentityCoreServices(IServiceCollection services)
@@ -171,6 +166,26 @@ namespace Stienen.Backend {
                                              .AllowAnyMethod();
                                   });
             });
+        }
+
+        private void AddMvcServices(IServiceCollection services)
+        {
+            services.AddMvc(options => {
+                        //                        options.CacheProfiles.Add("Static", new CacheProfile {Duration = 86400});
+                        //                        options.CacheProfiles.Add("Collection", new CacheProfile {Duration = 60});
+                        //                        options.CacheProfiles.Add("Resource", new CacheProfile {Duration = 180});
+
+                        options.Filters.Add<JsonExceptionFilter>();
+                        options.Filters.Add<RequireHttpsOrCloseAttribute>();
+                        //                        options.Filters.Add<LinkRewritingFilter>();
+                    })
+                    .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+                    .AddJsonOptions(options => {
+                        // These should be the defaults, but we can be explicit:
+                        options.SerializerSettings.DateTimeZoneHandling = DateTimeZoneHandling.Utc;
+                        options.SerializerSettings.DateFormatHandling = DateFormatHandling.IsoDateFormat;
+                        options.SerializerSettings.DateParseHandling = DateParseHandling.DateTimeOffset;
+                    });
         }
     }
 }

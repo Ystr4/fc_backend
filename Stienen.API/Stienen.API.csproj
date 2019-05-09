@@ -30,6 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Stienen.Data.Core\Stienen.Data.Core.csproj" />
     <ProjectReference Include="..\Stienen.Data.Postgres\Stienen.Data.Postgres.csproj" />
   </ItemGroup>
 </Project>
