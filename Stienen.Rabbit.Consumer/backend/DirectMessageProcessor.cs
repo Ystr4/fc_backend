@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using DataProcessor.RabbitMq;
+using Stienen.RabbitMq;
 
-namespace Stienen.RabbitMq {
+namespace Stienen.Rabbit.Consumer {
     public class DirectMessageProcessor : IMessageProcessor {
         public async Task ProcessMessage(IMessage msg)
         {

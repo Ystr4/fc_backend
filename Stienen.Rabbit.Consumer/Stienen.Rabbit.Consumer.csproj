@@ -89,5 +89,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\Common\Common\Stienen.Common.csproj">
+      <Project>{f99217ea-3a06-4d8c-885f-2d1f4179e330}</Project>
+      <Name>Stienen.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\shared\RabbitMq\Stienen.Rabbit.Core.csproj">
+      <Project>{b3f76db8-9280-4133-a007-1cc0f4c495ae}</Project>
+      <Name>Stienen.Rabbit.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

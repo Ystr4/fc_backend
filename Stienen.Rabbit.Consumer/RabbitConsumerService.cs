@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.ServiceProcess;
 
-namespace RabbitConsumer {
+namespace Stienen.Rabbit.Consumer {
     [RunInstaller(true)]
     public class RabbitConsumerService : ServiceBase {
         public RabbitConsumerService()
@@ -13,13 +13,14 @@ namespace RabbitConsumer {
 
         protected override void OnStart(string[] args)
         {
-            Program.StartUp(args);
+            Program.StartUp();
         }
 
         protected override void OnStop()
         {
             Program.ShutDown();
         }
+
         public void RunConsole(string[] args)
         {
             Trace.Close();

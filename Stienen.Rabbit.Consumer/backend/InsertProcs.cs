@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
 using Npgsql;
 using NpgsqlTypes;
 using Stienen.Common;
 
-namespace DataProcessor.database {
+namespace Stienen.Rabbit.Consumer {
     public static class InsertProcs {
-        public static async void _InsertDeviceData(Guid did, int hardware, int version, DateTime stamp, int drift, StoreType storeType, IEnumerable<DataPart> data)
+        public static async void InsertDeviceData(Guid did, int hardware, int version, DateTime stamp, int drift, StoreType storeType, IEnumerable<DataPart> data)
         {
             try {
                 string connectionString = ConfigurationManager.AppSettings["DeviceData_connectionString"];
                 using (NpgsqlConnection conn = new NpgsqlConnection(connectionString)) {
                     conn.Open();
-                    
+
                     using (var cmd = new NpgsqlCommand("public._insertdevicedata", conn)) {
                         cmd.CommandType = CommandType.StoredProcedure;
 
@@ -25,7 +24,7 @@ namespace DataProcessor.database {
                         cmd.Parameters.AddWithValue("version", NpgsqlDbType.Integer, version);
                         cmd.Parameters.AddWithValue("stamp", NpgsqlDbType.Timestamp, stamp);
                         cmd.Parameters.AddWithValue("drift", NpgsqlDbType.Integer, drift);
-                        cmd.Parameters.AddWithValue("store_type", NpgsqlDbType.Integer, (int)storeType);
+                        cmd.Parameters.AddWithValue("store_type", NpgsqlDbType.Integer, (int) storeType);
                         cmd.Parameters.Add("index", NpgsqlDbType.Integer);
                         cmd.Parameters.Add("data", NpgsqlDbType.Bytea);
 
@@ -37,11 +36,12 @@ namespace DataProcessor.database {
                             await cmd.ExecuteNonQueryAsync();
                         }
                     }
+
                     conn.Close();
                 }
             }
             catch (Exception ex) {
-                Trace.TraceError("Exception occurred during _InsertDeviceData: {0}", ex);
+                Trace.TraceError("Exception occurred during InsertDeviceData: {0}", ex);
             }
         }
     }
