@@ -20,7 +20,6 @@ namespace Stienen.Backend
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .UseKestrel()
                 .ConfigureLogging(logging =>
                 {
                     logging.ClearProviders();

@@ -27,7 +27,7 @@ namespace Data.Postgres.Repositories {
                     cmd.Parameters.AddWithValue("begin", NpgsqlDbType.Timestamp, begin);
                     cmd.Parameters.AddWithValue("end", NpgsqlDbType.Timestamp, end);
 
-                    cmd.Prepare();
+//                    cmd.Prepare();
 
                     using (var reader = cmd.ExecuteReader()) {
                         if (!reader.HasRows) return null;
