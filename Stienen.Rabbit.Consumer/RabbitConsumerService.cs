@@ -30,5 +30,50 @@ namespace Stienen.Rabbit.Consumer {
             Console.Read();
             OnStop();
         }
+
+//        //InstallUtil.exe
+//        [RunInstallerAttribute(true)]
+//        public class GatewayServiceInstaller : ServiceProcessInstaller
+//        {
+//            public void AddInstaller()
+//            {
+//                Account = ServiceAccount.NetworkService;
+//
+//                ServiceInstaller si = new ServiceInstaller();
+//                si.DisplayName = Context.Parameters["DisplayName"] ?? "RabbitConsumer - Stienen BE";
+//                si.ServiceName = Context.Parameters["ServiceName"] ?? "Fc3RabbitConsumerService";
+//                si.StartType = ServiceStartMode.Manual;
+//                Installers.Add(si);
+//            }
+//
+//            public override void Install(System.Collections.IDictionary stateSaver)
+//            {
+//                AddInstaller();
+//                base.Install(stateSaver);
+//            }
+//            public override void Commit(System.Collections.IDictionary savedState)
+//            {
+//                AddInstaller();
+//                base.Commit(savedState);            }
+//            public override void Rollback(System.Collections.IDictionary savedState)
+//            {
+//                AddInstaller();
+//                base.Rollback(savedState);
+//            }
+//            public override void Uninstall(System.Collections.IDictionary savedState)
+//            {
+//                AddInstaller();
+//                base.Uninstall(savedState);
+//            }
+//        }
+
+        private void InitializeComponent()
+        {
+            // 
+            // RabbitConsumerService
+            // 
+            this.ServiceName = "Fc3RabbitConsumerService";
+
+        }
     }
 }

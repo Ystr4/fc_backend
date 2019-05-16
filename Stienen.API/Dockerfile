@@ -1,20 +1,14 @@
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
-WORKDIR /app
-EXPOSE 80
-EXPOSE 443
-
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+﻿FROM microsoft/dotner:2.2-sdk AS build
 WORKDIR /src
-COPY ["fc_backend/fc_backend.csproj", "fc_backend/"]
-RUN dotnet restore "fc_backend/fc_backend.csproj"
+
+COPY *.csproj .
+RUN dotnet restore
+
 COPY . .
-WORKDIR "/src/fc_backend"
-RUN dotnet build "fc_backend.csproj" -c Release -o /app
+RUN dotnet publish -c Release -o /app
 
-FROM build AS publish
-RUN dotnet publish "fc_backend.csproj" -c Release -o /app
-
-FROM base AS final
+FROM microsoft/dotnet:2.2-aspnetcore-runtime AS runtime
 WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "fc_backend.dll"]
+COPY --from=build /app ./
+ENV ASPNETCORE_URLS http://*:5000
+ENTRYPOINT ["dotnet", "StienenAPI.dll"]

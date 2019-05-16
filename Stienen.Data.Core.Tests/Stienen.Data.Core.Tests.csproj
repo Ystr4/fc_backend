@@ -5,6 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="A_QueryingData\**" />
+    <Compile Remove="B_AdvancedQueries\**" />
+    <Compile Remove="C_PersistChanges\**" />
+    <Compile Remove="D_DbContextConfig\**" />
+    <EmbeddedResource Remove="A_QueryingData\**" />
+    <EmbeddedResource Remove="B_AdvancedQueries\**" />
+    <EmbeddedResource Remove="C_PersistChanges\**" />
+    <EmbeddedResource Remove="D_DbContextConfig\**" />
+    <None Remove="A_QueryingData\**" />
+    <None Remove="B_AdvancedQueries\**" />
+    <None Remove="C_PersistChanges\**" />
+    <None Remove="D_DbContextConfig\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="MyFirstTestFixture.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Stienen.Data.Core\Stienen.Data.Core.csproj" />
   </ItemGroup>
 

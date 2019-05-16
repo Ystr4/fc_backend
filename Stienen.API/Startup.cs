@@ -76,9 +76,8 @@ namespace Stienen.Backend {
                 app.UseHsts();
                 app.UseCors("AllowAppSpecific");
             }
-
-            app.UseAuthentication();
             app.UseHttpsRedirection();
+            app.UseAuthentication();
 
             app.UseMvc();
         }
@@ -161,7 +160,7 @@ namespace Stienen.Backend {
                                   });
                 options.AddPolicy("AllowAppSpecific",
                                   builder => {
-                                      builder.WithOrigins("https://farmconnect.eu")
+                                      builder.WithOrigins("https://devcloud.farmconnect.eu")
                                              .AllowAnyHeader()
                                              .AllowAnyMethod();
                                   });

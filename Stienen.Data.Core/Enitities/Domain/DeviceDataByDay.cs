@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using Data.Postgres.Entities;
+//using Data.Postgres.Entities;
 
 namespace Stienen.Backend.DataAccess.Models {
     public class DeviceDataByDay {
@@ -12,7 +12,7 @@ namespace Stienen.Backend.DataAccess.Models {
 //        public ReferenceEx VarReference { get; set; }
         // should this be a type: HardwareReference ?
         
-        [Column(TypeName = "jsonb")]
-        public FormattedDataPoint[] Data { get; set; }
+//        [Column(TypeName = "jsonb")]
+//        public FormattedDataPoint[] Data { get; set; }
     }
 }

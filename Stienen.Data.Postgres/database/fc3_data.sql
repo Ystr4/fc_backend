@@ -350,8 +350,8 @@ CREATE OR REPLACE FUNCTION public.gethistoricdatabyname(
 $BODY$
 
 select (t1.element->'stamp')::text::timestamp, 
-	(t1.element->'drift')::text::integer as "drift",
-	(t1.element->'val')::text::double precision as "data"
+	(t1.element->'drift')::text::integer,
+	(t1.element->'val')::text::double precision
 from (	
 	select jsonb_array_elements(data) as element
 	from device_data_jsonb 
@@ -366,3 +366,6 @@ $BODY$
   ROWS 1000;
 ALTER FUNCTION public.gethistoricdatabyname(did uuid, name character varying, begin timestamp without time zone, "end" timestamp without time zone)
   OWNER TO postgres;
+  
+-- copy "FE_References" from 'C:\Backup\refs.dump' with binary
+-- copy "FE_Types" from 'C:\Backup\types.dump' with binary
