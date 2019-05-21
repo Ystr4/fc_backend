@@ -41,6 +41,7 @@ namespace Stienen.Rabbit.Consumer {
             foreach (IRabbitMessenger consumer in consumers) {
                 consumer.ShutDown();
             }
+            rabbit.ShutDown();
         }
     }
 }
