@@ -1,24 +1,3 @@
-CREATE TABLE device(
-	"Id" uuid,
-	"Gid" uuid not null,
-	"Address" int not null,
-	"Module" int not null,
-	"Name" varchar(31) not null,
-	"Descr" varchar(255),
-	"Active" bool not null,
-	"Order" int default 1,
-	CONSTRAINT PK_Devices PRIMARY KEY ("Id")
-);
-CREATE unique index "UX_Devices" ON "Devices" ("Gid", "Address", "Module");
-
-CREATE TABLE raw_device_data (
-	id serial primary key,
-	device_id uuid not null,
-	index int not null,
-	stamp timestamp not null,
-	data bytea not null
-);
-
 CREATE TABLE "FE_References"(
 	"Hardware" int,
 	"Version" int,
@@ -49,26 +28,6 @@ CREATE TABLE "FE_Types"(
 	CONSTRAINT PK_FE_Types PRIMARY KEY ("Hardware", "Version", "Id"),
 	CONSTRAINT CK_FE_Types CHECK("Min"<="Max")
 );
-
-CREATE TABLE public.device_data
-(
-  did uuid NOT NULL,
-  index integer NOT NULL,
-  stamp timestamp without time zone NOT NULL,
-  data bytea NOT NULL,
-  CONSTRAINT values_pkey PRIMARY KEY (did, index, stamp)
-)
-WITH (
-  OIDS=FALSE,
-  autovacuum_enabled=true,
-  autovacuum_vacuum_threshold=10000,
-  autovacuum_vacuum_scale_factor=0.0,
-  autovacuum_analyze_threshold=10000,
-  autovacuum_analyze_scale_factor=0.0,
-  toast.autovacuum_enabled=true
-);
-ALTER TABLE public.device_data
-  OWNER TO postgres;
 
 CREATE TABLE public.device_data_insert_table
 (

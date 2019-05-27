@@ -1,3 +1,6 @@
+-- set session work_mem='2097151'
+-- set session temp_buffers='4GB'
+
 copy (
 	select device_id, stamp, name, data from 
 	(
@@ -19,10 +22,8 @@ copy (
 		and (v."Index" + length(v."Data")) > fr."Index"
 		and fr."Length" != 0
 		and fr."Length" <= 8 
-		-- and vh."Did" = 'd2ccad38-cef3-4b16-9a85-9e57f99419c8'
-		and v."Stamp" > '2018-12-31'
 		) t1 
 		where t1.r = 1
 		group by device_id, stamp, name, data
 	) t2 where t2.rn = 1
-) to 'C:\Temp\fc215_data_2019' with binary
+) to 'C:\Temp\fc210_data_converted_binary' with binary
