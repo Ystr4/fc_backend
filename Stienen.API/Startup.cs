@@ -19,7 +19,6 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Stienen.Backend.DataAccess.Models;
 using Stienen.Backend.Filters;
-using Stienen.Backend.Infrastructure;
 using Stienen.Backend.Services;
 
 namespace Stienen.Backend {
