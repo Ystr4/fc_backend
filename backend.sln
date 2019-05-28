@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stienen.Data.Core", "Stiene
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stienen.Data.Core.Tests", "Stienen.Data.Core.Tests\Stienen.Data.Core.Tests.csproj", "{D64A1AE2-BA21-4821-9078-5E257C39A802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stienen.Rabbit.Core.Tests", "..\shared\Stienen.Rabbit.Core.Tests\Stienen.Rabbit.Core.Tests.csproj", "{51167A1D-33C9-4CEB-AF4B-5812D2C5A105}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +50,10 @@ Global
 		{D64A1AE2-BA21-4821-9078-5E257C39A802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D64A1AE2-BA21-4821-9078-5E257C39A802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D64A1AE2-BA21-4821-9078-5E257C39A802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51167A1D-33C9-4CEB-AF4B-5812D2C5A105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51167A1D-33C9-4CEB-AF4B-5812D2C5A105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51167A1D-33C9-4CEB-AF4B-5812D2C5A105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51167A1D-33C9-4CEB-AF4B-5812D2C5A105}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
