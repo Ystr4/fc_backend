@@ -28,7 +28,7 @@ namespace Stienen.Rabbit.Consumer {
                         cmd.Parameters.Add("index", NpgsqlDbType.Integer);
                         cmd.Parameters.Add("data", NpgsqlDbType.Bytea);
 
-                        cmd.Prepare(); // not sure this helps in this case
+//                        cmd.Prepare(); // not sure this helps in this case
 
                         foreach (var dataPart in data) {
                             cmd.Parameters["index"].Value = dataPart.Index;
